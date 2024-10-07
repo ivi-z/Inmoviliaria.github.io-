@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AQInmobliaria</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="shortcut icon" href="/img/logo-empresa.png" type="image/x-icon">
+</head>
+<body  class="font-serif text-gray-600  bg-violet-100 m-0">
+ 
+    <!------Navegacion------->
+    <nav class="bg-violet-200">
+        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+            <div class="flex mb-1 transition duration-[1.2s] hover:scale-105">
+                <div class="flex justify-center items-center">
+                    <img src="img/logo-empresa.png" alt="Logo de AQInmobiliaria" class="w-16  h-auto  ">
+                </div>
+                <div class="p-4 italic bg-clip-text text-transparent bg-gradient-to-r from-sky-950 to-indigo-400">
+                    <h2 class="text-xl"><span class="text-3xl">AQI</span>nmobiliaria</h2>
+                </div>
+            </div>
+            <button data-collapse-toggle="navbar-default" type="button"
+                class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100"
+                aria-controls="navbar-default" aria-expanded="false">
+                <span class="sr-only">Menu</span>
+                <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                    viewBox="0 0 17 14">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M1 1h15M1 7h15M1 13h15" />
+                </svg>
+            </button>
+            <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+                <ul class="font-medium flex flex-col items-end p-4 mt-4 md:flex-row md:space-x-8 md:mt-0 md:border-0 ">
+                    <li>
+                        <a href="./index.html" class="  py-2 px-3 my-3  rounded text-gray-900 hover:bg-purple-400 " aria-current="page">Volver</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-------------H E A D E R----------------->
+
+    <header class="bg-violet-100 bg-opacity-20 p-1 shadow-xl">
+        <h1 class=" text-2xl italic text-slate-400 text-center">TU NUEVO HOGAR ESTÁ AQUÍ</h1>
+    </header>
+    <!-------- Main-------->
+    <main class="text-center m-32 text-lg"> 
+        <h2 >¡GRACIAS! </h2>
+        <p>Hemos recibido su mensaje.</p>
+       
+    </main>
+    <!------------------------FOOTER------------------------>
+    <footer class="bg-slate-600 flex flex-col justify-center items-center py-4">
+        <!-- Sección de contacto y mapa -->
+        <div class="flex flex-col md:flex-row justify-between items-center w-full max-w-6xl p-6 gap-6">
+            <!-- Información de contacto en columnas -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4 text-white">
+                <!-- Columna 1: Contacto Directo -->
+                <div>
+                    <h2 class="text-lg mb-2">Contactos Directos</h2>
+                    <div class="space-y-2">
+                        <div class="flex items-center">
+                            <img src="icons/icon_correo.png" alt="icono de correo" class="w-5 h-5 mr-2">
+                            <a href="mailto:info@aqinmobiliaria.com" class="hover:underline">info@aqinmobiliaria.com</a>
+                        </div>
+                        <div class="flex items-center">
+                            <img src="icons/icon_whatsapp.png" alt="icono de whatsapp" class="w-5 h-5 mr-2">
+                            <a href="https://wa.me/543834668899" target="_blank"
+                                class="hover:underline">+54-3834-668899</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Columna 2: Redes Sociales -->
+                <div>
+                    <h2 class="text-lg mb-2">Redes Sociales</h2>
+                    <div class="space-y-2">
+                        <div class="flex items-center">
+                            <img src="icons/icon_instagram.png" alt="icono de instagram" class="w-5 h-5 mr-2">
+                            <a href="https://www.instagram.com/" target="_blank"
+                                class="hover:underline">@aqinmobiliaria</a>
+                        </div>
+                        <div class="flex items-center">
+                            <img src="icons/icon_facebook.png" alt="icono de facebook" class="w-5 h-5 mr-2">
+                            <a href="https://www.facebook.com/" target="_blank"
+                                class="hover:underline">aqinmobiliaria</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mapa de Google -->
+            <div class="w-full md:w-auto">
+                <iframe class="w-full md:w-56 h-56 border-none"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3506.8627025004216!2d-65.80319178926973!3d-28.483681175645174!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x942428f09e683fb9%3A0x38577f27ad8bea5c!2sC.%20Domingo%20de%20Vergara%201836%2C%20K4700%20San%20Fernando%20del%20Valle%20de%20Catamarca%2C%20Catamarca!5e0!3m2!1ses-419!2sar!4v1727980610348!5m2!1ses-419!2sar"
+                    style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+
+        <!-- Logo y nombre de la empresa -->
+        <div class="mt-2">
+            <div class="flex mb-1 transition duration-[1.2s] hover:scale-105">
+                <div class="flex justify-center items-center">
+                    <img src="img/logo-empresa.png" alt="Logo de AQInmobiliaria" class="w-16  h-auto">
+                </div>
+                <div class="p-4 italic bg-clip-text text-transparent bg-gradient-to-r from-sky-950 to-indigo-300">
+                    <h2 class="text-xl"><span class="text-3xl">AQI</span>nmobiliaria</h2>
+                </div>
+            </div>
+        </div>
+
+        <!-- Línea divisoria y derechos reservados -->
+        <div class="w-full mt-5">
+            <hr class="my-4 border-gray-200" />
+            <p class="flex justify-center text-xs text-gray-200">
+                © 2024 <a href="#" class="hover:underline "> AQInmobiliaria</a>. Todos los derechos reservados.
+            </p>
+        </div>
+    </footer>
+
+    <!-- script de flowbite /libreria de Tailwind/ Para el Navegador -Navbar -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"></script>
+</body>
+</html>

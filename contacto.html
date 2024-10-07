@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Metadatos -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- link de Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="icons/icon_empresa.png" type="image/x-icon">
+    <title>AQInmobliaria</title>
+</head>
+<body class="font-serif text-base text-gray-600  bg-violet-100 m-0">
+    <!------Navegacion------->
+    <nav class="bg-violet-200">
+      <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+          <div class="flex mb-1 transition duration-[1.2s] hover:scale-105">
+              <div class="flex justify-center items-center">
+                  <img src="img/logo-empresa.png" alt="Logo de AQInmobiliaria" class="w-16  h-auto  ">
+              </div>
+              <div class="p-4 italic bg-clip-text text-transparent bg-gradient-to-r from-sky-950 to-indigo-400">
+                  <h2 class="text-xl" ><span class="text-3xl">AQI</span>nmobiliaria</h2>
+              </div>
+          </div>
+        <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100" aria-controls="navbar-default" aria-expanded="false">
+            <span class="sr-only">Menu</span>
+            <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+            </svg>
+        </button>
+        <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+          <ul class="font-medium flex flex-col items-end p-4 mt-4 md:flex-row md:space-x-8 md:mt-0 md:border-0 ">
+            <li>
+              <a href="./index.html" class="  py-2 px-3 my-3  rounded text-gray-900 hover:bg-purple-400 " aria-current="page">Inicio</a>
+            </li>
+            <li>
+              <a href="./nosotros.html" class=" py-2 px-3 my-3 text-gray-900 rounded  hover:bg-purple-400  ">Nosotros</a>
+            </li>
+            <li>
+              <a href="./propiedades.html" class=" py-2 px-3 my-3 text-gray-900 rounded  hover:bg-purple-400 ">Propiedades</a>
+            </li>
+            <li>
+              <a href="./contacto.html" class=" py-2 px-3 my-3 text-gray-900 rounded  hover:bg-purple-400 ">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+</nav>
+<!---------------------H E A D E R--------------->
+<header class="bg-violet-100 bg-opacity-20 p-1 shadow-lg">
+  <h1 class=" text-2xl  italic text-slate-400 text-center">TU NUEVO HOGAR ESTÁ AQUÍ</h1>
+</header>
+   <!----------------------M A I N---------------> 
+    <main>
+    <div class="text-gray-600 m-10">
+      <h1>¡Estamos aquí para ayudarte a encontrar tu nuevo hogar!</h1>
+        <p>
+          ¡Queremos saber de ti! Cuéntanos 
+          <br>
+          Si tienes alguna pregunta o necesitas más información, completa el siguiente formulario y nos pondremos en contacto contigo a la brevedad.
+       </p>
+    </div>
+
+    <div class="flex flex-col md:flex-row gap-4 mx-auto mb-10">
+        <div class="w-full md:w-1/2 p-4">
+          <h2 class="text-xl mb-4 text-center">Formulario de Contacto</h2>
+              <form class="max-w-lg  mx-auto p-6  shadow-md rounded-lg bg-slate-400 text-slate-500 " action="./recibido.html" method="get">
+              <h2 class="text-xl font-bold mb-4 text-center">Contáctenos</h2>
+        
+      
+          <!-- Nombre y apellido-->
+         <div class="flex flex-wrap md:flex-nowrap gap-4">
+                  <!------ Nombre---- -->
+                  <div class="w-full md:w-1/2">
+                      <label for="nombre" class="block text-sm font-medium text-gray-700">Nombre</label>
+                      <input type="text" id="nombre" name="nombre"
+                          class="mt-1 block w-full p-2 border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500"placeholder="Escriba su Nombre" required>
+                  </div>
+                  <!--------Apellido -->
+                  <div class="w-full md:w-1/2">
+                      <label for="apellido" class="block text-sm font-medium text-gray-700">Apellido</label>
+                      <input type="text" id="apellido" name="apellido"
+                          class="mt-1 block w-full p-2 border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500" placeholder="Escriba su Apellido" required>
+                  </div>
+          </div>
+      
+          <!-- Correo -->
+          <div class="mb-4">
+            <label for="correo" class="block text-sm font-medium text-gray-700">Correo Electrónico</label>
+            <input type="email" id="correo" name="correo" class="mt-1 p-2 w-full border rounded-lg focus:ring focus:ring-blue-500" placeholder="ejemplo@correo.com" required>
+          </div>
+      
+          <!-- Teléfono -->
+          <div class="mb-4">
+            <label for="telefono" class="block text-sm font-medium text-gray-700">Teléfono</label>
+            <input type="tel" id="telefono" name="telefono" class="mt-1 p-2 w-full border rounded-lg focus:ring focus:ring-blue-500" placeholder="Ingrese su número de teléfono" required>
+          </div>
+      
+          <!-- Mensaje -->
+          <div class="mb-4">
+            <label for="mensaje" class="block text-sm font-medium text-gray-700">Mensaje</label>
+            <textarea id="mensaje" name="mensaje" rows="5" class="mt-1 p-2 w-full border rounded-lg focus:ring focus:ring-blue-500" placeholder="Escriba su mensaje aquí..." required></textarea>
+          </div>
+      
+          <!-- Botón de enviar -->
+          <div class="flex justify-center items-center" >
+            <input class="text-gray-600 bg-violet-200 w-32 hover:bg-purple-400 cursor-pointer transition-colors text-center p-3 font-bold rounded-lg" type="submit" id="mensaje" value="Enviar">
+          </div>
+          </form>
+        </div>
+      
+      
+        <div class="flex flex-col justify-center items-center text-center italic md:w-1/2" >
+            <h2 class="pt-10">Horarios de Atención:</h2>
+            <p class="pb-2 ">Lunes a Viernes: 9:00 AM-5:00 PM
+              <br>
+              Dirección: Calle 1233, San Fernando del Valle de Catamarca-Argentina
+             <br>
+              Sabados: 9:00 AM - 1:00 PM
+            </p>
+              <div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d56119.97404422858!2d-65.77515985000001!3d-28.464534049999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x942428bf1d0f9fcd%3A0x7e1edd4b1609861a!2sSan%20Fernando%20del%20Valle%20de%20Catamarca%2C%20Catamarca!5e0!3m2!1ses!2sar!4v1720585307202!5m2!1ses!2sar" width=100% height="300"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="rounded-lg shadow-md"></iframe>
+              </div>
+          </div>
+     </div>
+    </main>
+
+    <!-------------------------F O O T E R ------------------------>
+
+    <footer class="bg-slate-600 flex flex-col items-center py-4">
+      <!-- Sección de contacto -->
+      <div class="flex flex-col md:flex-row justify-between items-center w-full max-w-6xl p-6 gap-6">
+          <!-- Información de contacto en columnas -->
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4 text-white">
+              <!-- Columna 1: Contacto Directo -->
+              <div>
+                  <h2 class="text-lg mb-2">Contactos Directos</h2>
+                  <div class="space-y-2">
+                      <div class="flex items-center">
+                          <img src="icons/icon_correo.png" alt="icono de correo" class="w-5 h-5 mr-2">
+                          <a href="mailto:info@aqinmobiliaria.com" class="hover:underline">info@aqinmobiliaria.com</a>
+                      </div>
+                      <div class="flex items-center">
+                          <img src="icons/icon_whatsapp.png" alt="icono de whatsapp" class="w-5 h-5 mr-2">
+                          <a href="https://wa.me/543834668899" target="_blank" class="hover:underline">+54-3834-668899</a>
+                      </div>
+                  </div>
+              </div>
+  
+              <!-- Columna 2: Redes Sociales -->
+              <div>
+                  <h2 class="text-lg mb-2">Redes Sociales</h2>
+                  <div class="space-y-2">
+                      <div class="flex items-center">
+                          <img src="icons/icon_instagram.png" alt="icono de instagram" class="w-5 h-5 mr-2">
+                          <a href="https://www.instagram.com/" target="_blank" class="hover:underline">@aqinmobiliaria</a>
+                      </div>
+                      <div class="flex items-center">
+                          <img src="icons/icon_facebook.png" alt="icono de facebook" class="w-5 h-5 mr-2">
+                          <a href="https://www.facebook.com/" target="_blank" class="hover:underline">aqinmobiliaria</a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  
+      <!-- Logo y nombre de la empresa -->
+      <div class="flex flex-col items-center mt-2">
+          <div class="flex mb-1 transition duration-[1.2s] hover:scale-105">
+              <div class="flex justify-center items-center">
+                  <img src="img/logo-empresa.png" alt="Logo de AQInmobiliaria" class="w-16  h-auto  ">
+              </div>
+              <div class="p-4 italic bg-clip-text text-transparent bg-gradient-to-r from-sky-950 to-indigo-300">
+                <h2 class="text-xl" ><span class="text-3xl">AQI</span>nmobiliaria</h2>
+              </div>
+          </div>
+      </div>
+  
+      <!-- Línea divisoria y derechos reservados -->
+      <div class="w-full mt-5">
+                    <hr class="my-4 border-gray-200" />
+            <p class="flex justify-center text-xs text-gray-200">
+                © 2024 <a href="#" class="hover:underline "> AQInmobiliaria</a>. Todos los derechos reservados.
+            </p>
+      </div>
+  </footer>  
+
+        <!-- script de flowbite /libreria de Tailwind/ Para el Navegador -Navbar -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"></script>
+    
+</body>
+</html>
